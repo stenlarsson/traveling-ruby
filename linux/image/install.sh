@@ -31,6 +31,9 @@ yum install -y --skip-broken --enablerepo centosplus \
 	centos-release-SCL file db4-utils compat-db43 mock wget s3cmd
 yum install -y --skip-broken --enablerepo centosplus \
 	python27-python
+yum install ca-certificates
+update-ca-trust force-enable
+update-ca-trust extract	
 create_user app "App" 1000
 usermod -a -G mock app
 mkdir -p /etc/container_environment /etc/workaround-docker-2267
