@@ -10,7 +10,7 @@ function download_and_extract()
 	local regex='\.bz2$'
 
 	run rm -f "$BASENAME"
-	run wget -O "$BASENAME" "$URL"
+	run wget --no-check-certificate -O "$BASENAME" "$URL"
 	if [[ "$URL" =~ $regex ]]; then
 		run tar xjf "$BASENAME"
 	else
