@@ -1,12 +1,10 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    oj (2.14.0)
-    unf_ext (0.0.7.1)
+    libv8 (3.16.14.7)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  oj (= 2.14.0)
-  unf_ext (= 0.0.7.1)
+  libv8 (= 3.16.14.7)
