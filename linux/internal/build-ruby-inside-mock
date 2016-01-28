@@ -186,6 +186,8 @@ run cp /system/ca-bundle.crt /tmp/ruby/lib/
 run cp /system/restore_environment.rb /tmp/ruby/lib/
 export SSL_CERT_FILE=/tmp/ruby/lib/ca-bundle.crt
 
+run /tmp/ruby/bin/gem update --system
+
 # Dump various information about the Ruby binaries.
 RUBY_COMPAT_VERSION=`/tmp/ruby/bin/ruby -rrbconfig -e 'puts RbConfig::CONFIG["ruby_version"]'`
 RUBY_ARCH=`/tmp/ruby/bin/ruby -rrbconfig -e 'puts RbConfig::CONFIG["arch"]'`
