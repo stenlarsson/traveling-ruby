@@ -1,3 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'libv8', '= 3.16.14.7', :platforms => :ruby
+gem 'bson', '= 2.3.0'
+gem 'eventmachine', '= 1.0.6'
+gem 'ffi', '= 1.9.6'
+gem 'json', '= 1.8.2'
+gem 'nokogiri', '= 1.6.6.2'
+gem 'oj', '= 2.14.0'
+gem 'thin', '= 1.6.3'
